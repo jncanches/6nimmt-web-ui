@@ -1,14 +1,6 @@
 import React from 'react';
 
 export default class Card extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            faceValue: this.props.faceValue,
-            weight: this.getWeightFromFaceValue(this.props.faceValue)
-        };
-    }
-
     render() {
         const divStyle = {
             margin: 'auto',
@@ -17,14 +9,16 @@ export default class Card extends React.Component {
             width: '50px'
         };
 
+        var weight = this.getWeightFromFaceValue(this.props.faceValue);
+
         return (
             <div>
                 <div class="card" style={divStyle}>
-                    {this.state.faceValue}
+                    {this.props.faceValue}
                 </div>
 
                 <div>
-                    faceValue={this.state.faceValue} weight={this.state.weight}
+                    faceValue={this.props.faceValue} weight={weight}
                 </div>
             </div>
         );
