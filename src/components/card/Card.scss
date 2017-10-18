@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../../variables";
 
 $card-width: 266px;
 $card-height: 300px;
@@ -202,5 +202,5 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
 }
 
 .card.weight-7::after {
-  background-image: url(./assets/images/bull-background@64px.png);
+  background-image: url(../../assets/images/bull-background@64px.png);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../card/Card';
 
 export default class Board extends React.Component {
     constructor(props) {

@@ -1,7 +1,16 @@
 import React from 'react';
-import toto from './Card.css';
+import '../../assets/fonts/6nimmt/style.css';
+import './Card.css';
 
 export default class Card extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            faceValue: 1,
+            width: 266
+        };
+    }
+
     render() {
         var weight = this.getWeightFromFaceValue(this.props.faceValue);
 
