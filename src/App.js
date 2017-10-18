@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Game from './Game';
-import './ressources/fonts/6nimmt/style.css';
+import './assets/fonts/6nimmt/style.css';
 
 class App extends Component {
   render() {

@@ -1,22 +1,28 @@
 import React from 'react';
-import styles from './Card.css';
-console.log(styles);
+import toto from './Card.css';
 
 export default class Card extends React.Component {
     render() {
         var weight = this.getWeightFromFaceValue(this.props.faceValue);
 
-        return (
-            <div className={'card weight-' + weight}>
-                <div className={styles.header}>
-                    weight {weight}
-                </div>
-                <div className={styles.center}>
-                    <i className="icon-bull"/>
+        var divStyle = {
+            width: this.props.width + 'px',
+            height: this.props.width * 1.52  + 'px'
+        };
 
-                </div>
-                <div className={styles.footer}>
+        return (
+            <div className={'card weight-' + weight} style={divStyle}>
+                <div className="header">
+                    <label className="face-value-left">{this.props.faceValue}</label>
                     weight {weight}
+                    <label className="face-value-right">{this.props.faceValue}</label>
+                </div>
+                <i className="icon-bull"/>
+                <label className="face-value">{this.props.faceValue}</label>
+                <div className="footer">
+                    <label className="face-value-left">{this.props.faceValue}</label>
+                    weight {weight}
+                    <label className="face-value-right">{this.props.faceValue}</label>
                 </div>
 
                 {/*face value {this.props.faceValue}*/}

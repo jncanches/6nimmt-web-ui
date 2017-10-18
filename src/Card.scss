@@ -1,0 +1,206 @@
+@import "./variables.scss";
+
+$card-width: 266px;
+$card-height: 300px;
+
+$center-background-color-weight-1: white;
+$center-background-color-weight-2: rgba(91,134,181,0.8);
+$center-background-color-weight-3: rgba(88,130,43,0.8);
+$center-background-color-weight-5: rgba(207,13,26,0.8);
+$center-background-color-weight-7: rgba(164,151,4,0.8);
+
+
+$bull-color-weight-1: #49435E;
+$bull-color-weight-2: #243963;
+$bull-color-weight-3: #1B5123;
+$bull-color-weight-5: #49435E;
+$bull-color-weight-7: #293977;
+
+$face-value-color-weight-1: #9486AD;
+$face-value-color-weight-2: #498A9D;
+$face-value-color-weight-3: #9EA335;
+$face-value-color-weight-5: #698324;
+$face-value-color-weight-7: #8D2155;
+
+$face-value-header-color-weight-1: $bull-color-weight-1;
+$face-value-header-color-weight-2: $bull-color-weight-2;
+$face-value-header-color-weight-3: $bull-color-weight-3;
+$face-value-header-color-weight-5: $center-background-color-weight-5;
+$face-value-header-color-weight-7: $bull-color-weight-7;
+
+.card {
+  position: relative;
+  margin: auto;
+
+  background-color: white;
+  background-clip: content-box;
+
+  height: $card-height;
+  width: $card-width;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  padding: 50px 20px;
+
+  .header, .footer {
+    position: absolute;
+    width: 100%;
+    //height: 80px;
+    left: 0px;
+    padding: 10px 0px;
+    text-align: center;
+
+    .face-value-left, .face-value-right {
+      font-size: 35px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      padding: 0 10px;
+      color: $face-value-header-color-weight-1;
+    }
+
+    .face-value-left {
+      float: left;
+    }
+
+    .face-value-right {
+      float: right;
+    }
+  }
+
+  .header {
+    top: 0px;
+  }
+
+  .footer {
+    bottom: 0px;
+    transform: rotate(180deg);
+  }
+
+  .icon-bull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    margin: auto;
+
+    z-index: 1;
+    font-size: 225px;
+    color: #49435E;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .face-value {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    //width: 50%;
+    height: 50%;
+    margin: auto;
+
+    font-size: 135px;
+    font-family: Elephant;
+    color: $face-value-color-weight-1;
+    text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
+  }
+}
+
+.card::after {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  height: $card-height;
+  width: $card-width;
+
+  margin: auto;
+
+  background-clip: content-box;
+  background-repeat: round space;
+  opacity: 0.2;
+}
+
+.card.weight-2 {
+  background-color: $center-background-color-weight-2;
+
+  .icon-bull {
+    color: $bull-color-weight-2;
+  }
+
+  .face-value {
+    color: $face-value-color-weight-2;
+  }
+
+  .header, .footer {
+    .face-value-left, .face-value-right {
+      color: $face-value-header-color-weight-2;
+    }
+  }
+}
+
+.card.weight-3 {
+  background-color: $center-background-color-weight-3;
+
+  .icon-bull {
+    color: $bull-color-weight-3;
+  }
+
+  .face-value {
+    color: $face-value-color-weight-3;
+  }
+
+  .header, .footer {
+    .face-value-left, .face-value-right {
+      color: $face-value-header-color-weight-3;
+    }
+  }
+}
+
+.card.weight-5 {
+  background-color: $center-background-color-weight-5;
+
+  .icon-bull {
+    color: $bull-color-weight-5;
+  }
+
+  .face-value {
+    color: $face-value-color-weight-5;
+  }
+
+  .header, .footer {
+    .face-value-left, .face-value-right {
+      color: $face-value-header-color-weight-5;
+    }
+  }
+}
+
+.card.weight-7 {
+  background-color: $center-background-color-weight-7;;
+
+  .icon-bull {
+    color: $bull-color-weight-7;
+  }
+
+  .face-value {
+    color: $face-value-color-weight-7;
+  }
+
+  .header, .footer {
+    .face-value-left, .face-value-right {
+      color: $face-value-header-color-weight-7;
+    }
+  }
+}
+
+.card.weight-7::after {
+  background-image: url(./assets/images/bull-background@64px.png);
+}
