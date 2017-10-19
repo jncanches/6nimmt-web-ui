@@ -1,32 +1,4 @@
-@import "../../variables";
-
-$card-width: 266px;
-$card-height: 300px;
-
-$center-background-color-weight-1: white;
-$center-background-color-weight-2: rgba(91,134,181,0.8);
-$center-background-color-weight-3: rgba(88,130,43,0.8);
-$center-background-color-weight-5: rgba(207,13,26,0.8);
-$center-background-color-weight-7: rgba(164,151,4,0.8);
-
-
-$bull-color-weight-1: #49435E;
-$bull-color-weight-2: #243963;
-$bull-color-weight-3: #1B5123;
-$bull-color-weight-5: #49435E;
-$bull-color-weight-7: #293977;
-
-$face-value-color-weight-1: #9486AD;
-$face-value-color-weight-2: #498A9D;
-$face-value-color-weight-3: #9EA335;
-$face-value-color-weight-5: #698324;
-$face-value-color-weight-7: #8D2155;
-
-$face-value-header-color-weight-1: $bull-color-weight-1;
-$face-value-header-color-weight-2: $bull-color-weight-2;
-$face-value-header-color-weight-3: $bull-color-weight-3;
-$face-value-header-color-weight-5: $center-background-color-weight-5;
-$face-value-header-color-weight-7: $bull-color-weight-7;
+@import "cssVariables.scss";
 
 .card {
   position: relative;
@@ -35,8 +7,8 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
   background-color: white;
   background-clip: content-box;
 
-  height: $card-height;
-  width: $card-width;
+  width: var(--card-width);
+  height: var(--card-height);
 
   padding: 20px;
   border-radius: 10px;
@@ -56,7 +28,7 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
       font-size: 35px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
       padding: 0 10px;
-      color: $face-value-header-color-weight-1;
+      color: var(--face-value-header-color-weight-1);
     }
 
     .face-value-left {
@@ -106,7 +78,7 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
 
     font-size: 135px;
     font-family: Elephant;
-    color: $face-value-color-weight-1;
+    color: var(--face-value-color-weight-1);
     text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
   }
 }
@@ -119,8 +91,8 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
   bottom: 0;
   right: 0;
 
-  height: $card-height;
-  width: $card-width;
+  height: var(--card-height);
+  width: var(--card-width);
 
   margin: auto;
 
@@ -130,73 +102,73 @@ $face-value-header-color-weight-7: $bull-color-weight-7;
 }
 
 .card.weight-2 {
-  background-color: $center-background-color-weight-2;
+  background-color: var(--center-background-color-weight-2);
 
   .icon-bull {
-    color: $bull-color-weight-2;
+    color: var(--bull-color-weight-2);
   }
 
   .face-value {
-    color: $face-value-color-weight-2;
+    color: var(--face-value-color-weight-2);
   }
 
   .header, .footer {
     .face-value-left, .face-value-right {
-      color: $face-value-header-color-weight-2;
+      color: var(--face-value-header-color-weight-2);
     }
   }
 }
 
 .card.weight-3 {
-  background-color: $center-background-color-weight-3;
+  background-color: var(--center-background-color-weight-3);
 
   .icon-bull {
-    color: $bull-color-weight-3;
+    color: var(--bull-color-weight-3);
   }
 
   .face-value {
-    color: $face-value-color-weight-3;
+    color: var(--face-value-color-weight-3);
   }
 
   .header, .footer {
     .face-value-left, .face-value-right {
-      color: $face-value-header-color-weight-3;
+      color: var(--face-value-header-color-weight-3);
     }
   }
 }
 
 .card.weight-5 {
-  background-color: $center-background-color-weight-5;
+  background-color: var(--center-background-color-weight-5);
 
   .icon-bull {
-    color: $bull-color-weight-5;
+    color: var(--bull-color-weight-5);
   }
 
   .face-value {
-    color: $face-value-color-weight-5;
+    color: var(--face-value-color-weight-5);
   }
 
   .header, .footer {
     .face-value-left, .face-value-right {
-      color: $face-value-header-color-weight-5;
+      color: var(--face-value-header-color-weight-5);
     }
   }
 }
 
 .card.weight-7 {
-  background-color: $center-background-color-weight-7;;
+  background-color: var(--center-background-color-weight-7);;
 
   .icon-bull {
-    color: $bull-color-weight-7;
+    color: var(--bull-color-weight-7);
   }
 
   .face-value {
-    color: $face-value-color-weight-7;
+    color: var(--face-value-color-weight-7);
   }
 
   .header, .footer {
     .face-value-left, .face-value-right {
-      color: $face-value-header-color-weight-7;
+      color: var(--face-value-header-color-weight-7);
     }
   }
 }

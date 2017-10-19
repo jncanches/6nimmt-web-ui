@@ -1,0 +1,34 @@
+variables {
+  --card-width: 300;
+  --card-height: calc(var(--card-width) * 1.52);;
+
+  --center-background-color-weight-1: white;
+  --center-background-color-weight-2: rgba(91,134,181,0.8);
+  --center-background-color-weight-3: rgba(88,130,43,0.8);
+  --center-background-color-weight-5: rgba(207,13,26,0.8);
+  --center-background-color-weight-7: rgba(164,151,4,0.8);
+
+
+  --bull-color-weight-1: #49435E;
+  --bull-color-weight-2: #243963;
+  --bull-color-weight-3: #1B5123;
+  --bull-color-weight-5: #49435E;
+  --bull-color-weight-7: #293977;
+
+  --face-value-color-weight-1: #9486AD;
+  --face-value-color-weight-2: #498A9D;
+  --face-value-color-weight-3: #9EA335;
+  --face-value-color-weight-5: #698324;
+  --face-value-color-weight-7: #8D2155;
+
+  --face-value-header-color-weight-1: var(--bull-color-weight-1);
+  --face-value-header-color-weight-2: var(--bull-color-weight-2);
+  --face-value-header-color-weight-3: var(--bull-color-weight-3);
+  --face-value-header-color-weight-5: var(--center-background-color-weight-5);
+  --face-value-header-color-weight-7: var(--bull-color-weight-7);
+}
+
+.card {
+  height: var(--card-height)px;
+  width: var(--card-width)px;
+}
