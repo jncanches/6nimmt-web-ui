@@ -6,6 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
+import '../../stylesheets/main.css';
+
 import Card from './Card';
 
 const stories = storiesOf('Cards', module);

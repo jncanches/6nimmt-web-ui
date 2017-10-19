@@ -1,5 +1,6 @@
-@import "./variables.scss";
-
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
 .App {
   text-align: center;
 }
@@ -18,10 +19,6 @@
 
 .App-title {
   font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {

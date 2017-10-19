@@ -1,13 +1,20 @@
 import React from 'react';
-import '../../assets/fonts/6nimmt/style.css';
-import './Card.css';
+import classnames from 'classnames';
 
 export default class Card extends React.Component {
     render() {
-        var weight = this.getWeightFromFaceValue(this.props.faceValue);
+        let weight = this.getWeightFromFaceValue(this.props.faceValue);
+
+        let classes = classnames('card', {
+            'weight-1': weight === 1,
+            'weight-2': weight === 2,
+            'weight-3': weight === 3,
+            'weight-5': weight === 5,
+            'weight-7': weight === 7
+        });
 
         return (
-            <div className={'card weight-' + weight} style={{'--card-width': this.props.width + 'px', '--card-height': this.props.width + 'px'}}>
+            <div className={classes}>
                 <div className="header">
                     <label className="face-value-left">{this.props.faceValue}</label>
                     weight {weight}

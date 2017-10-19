@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.test {
+  width: 200px;
+}
+
+.my-6nimmt-component {
+  // 1. Configuration and helpers
+  @import "abstracts/all";
+
+  // 2. Vendors
+  @import "vendors/all";
+
+  // 3. Base stuff
+  @import "base/all";
+
+  // 4. Layout-related sections
+  @import "layout/all";
+
+  // 5. Components
+  @import "components/all";
+
+  // 6. Page-specific styles
+  @import 'pages/all';
+
+  // 7. Themes
+  @import 'themes/all';
+}
