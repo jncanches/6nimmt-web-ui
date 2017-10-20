@@ -13,8 +13,16 @@ export default class Card extends React.Component {
             'weight-7': weight === 7
         });
 
+        const divStyle = {
+            '--card-width': this.props.width + 'px',
+            '--card-height': (this.props.width * 1.52) + 'px'
+        };
+
+        // document.documentElement.style.setProperty(`--card-width`, this.props.width + 'px');
+        // console.log(document.documentElement.style);
+
         return (
-            <div className={classes}>
+            <div className={classes} style={divStyle}>
                 <div className="header">
                     <label className="face-value-left">{this.props.faceValue}</label>
                     weight {weight}

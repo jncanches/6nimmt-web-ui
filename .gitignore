@@ -23,4 +23,7 @@ yarn-error.log*
 /package-lock.json
 src/**/*.css
 
-!/src/assets/fonts/6nimmt/style.css
+!/src/stylesheets/base/fonts/6nimmt/_font-face.css
+!/src/stylesheets/base/fonts/6nimmt/src/demo-files/demo.css
+!/src/stylesheets/components/_variables.css
+!/src/stylesheets/base/fonts/6nimmt/src/style.css

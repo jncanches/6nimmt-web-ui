@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
-    "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -18,13 +17,18 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook": "npm run build-css && start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-knobs": "^3.2.12",
     "@storybook/addon-links": "^3.2.12",
-    "@storybook/react": "^3.2.12"
+    "@storybook/react": "^3.2.12",
+    "node-sass": "^4.5.3",
+    "node-sass-chokidar": "0.0.3",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1"
   }
 }

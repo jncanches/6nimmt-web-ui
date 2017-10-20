@@ -8,6 +8,8 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
 import Card from './Card';
 
+import './../../stylesheets/main.scss';
+
 const stories = storiesOf('Cards', module);
 
 // Add the `withKnobs` decorator to add knobs support to your stories.

@@ -4,7 +4,8 @@
 
 //Importing a css this way as sass-loader do not deal correcty with url in @font-face.
 //Be careful, as all .scss fies are included from main.scss, relative path to .css files must build from main.scss directory
+
 @import "./base/fonts/6nimmt/_font-face.css";
 
-@import "fonts/6nimmt/_font-styles";
+@import "fonts/6nimmt/font-styles";
 
