@@ -30,5 +30,12 @@
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1"
-  }
+  },
+  "author": "Jean-Noël Canches",
+  "homepage": "",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ]
 }
